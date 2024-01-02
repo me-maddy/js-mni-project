@@ -9,7 +9,7 @@ form.addEventListener("submit", function (e) {
   const BMI =
     weightInp.value / ((heightInp.value / 100) * (heightInp.value / 100));
 
-  result.innerText = BMI;
+  result.innerText = BMI.toFixed(2);
   heading.classList.remove("hidden");
   weightInp.value = "";
   heightInp.value = "";
