@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(201, 188, 188);
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.dis-none {
+  visibility: hidden;
+}
+
+#inp {
+  padding: 8px 12px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 0.8em;
+  border: 1px solid rgb(185, 185, 185);
+}
+
+.submit {
+  padding: 8px 30px;
+  font-size: 1.1em;
+  border-radius: 1.1em;
+  border: none;
+  cursor: pointer;
+}
+
+.main-head {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  row-gap: 20px;
+  position: relative;
+
+  .restart {
+    padding: 10px 30px;
+    left: 10%;
+    top: 5%;
+  }
+
+  .disable {
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.5;
+  }
+
+  .message-cont {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(27, 27, 27, 0.8);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: all 0.3s ease-in 0.1s;
+
+    .msg-box {
+      width: 40%;
+      height: 50%;
+      background-color: white;
+      position: relative;
+      z-index: 2;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      row-gap: 15px;
+      padding: 0 10px;
+
+      .declare-result {
+        font-size: 2.4rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #2b2b2b;
+      }
+
+      .msg-btn {
+        padding: 10px 30px;
+      }
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+.first-head {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-style: oblique;
+  top: 3.5em;
+}
+
+.para {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(5, 27, 5);
+}
+
+.result {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+#main-container footer {
+  background-color: rgb(39, 35, 35);
+  width: 100%;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.btn {
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(116, 129, 139);
+  box-shadow: 0px 0px 8px #616161;
+  cursor: pointer;
+  font-size: 20px;
+
+  a {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.first-para {
+  font-size: 22px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess a number</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="recover.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div id="main-container">
+        <button class="restart btn pos-abs disable">Restart</button>
+        <div class="message-cont pos-abs hidden">
+            <div class="msg-box">
+                <h3 class="declare-result"></h3>
+                <p class="message"></p>
+                <p class="original-num"></p>
+                <p>Your guesses : <span></span></p>
+                <button class="msg-btn btn">OK</button>
+            </div>
+        </div>
+        <h2>Try and guess a random number between 1 and 100.</h2>
+        <h3 class="first-head">You have <span class="left-count">10</span> attempts to guess the right number.</h3>
+        <h1 class="main-head">Guess a number</h1>
+        <input type="number" id="inp" required placeholder="Guess a number">
+        <button class="submit dis-none">Submit</button>
+        <div class="result dis-none"></div>
+        <div class="first-para para">Previous guesses : <span class="pre-guesses"></span></div>
+        <div class="second-para para">Guess remaining : <span class="remain-guesses"></span></div>
+        <footer class="pos-abs">This game is made by Madan with ❤️.</footer>
+    </div>
+</body>
+
+</html>
