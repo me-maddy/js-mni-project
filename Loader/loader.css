@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.dot {
+  display: inline-block;
+  width: 2vw;
+  height: 2vh;
+  border: none;
+  border-radius: 1.2em;
+  position: absolute;
+}
+
+.dot:nth-child(1) {
+  background-color: red;
+  left: 42vw;
+  animation: first 0.5s ease-in-out infinite;
+}
+
+.dot:nth-child(2) {
+  background-color: blue;
+  left: 46vw;
+  animation: first 0.5s ease-in-out 0.5s infinite;
+}
+
+.dot:nth-child(3) {
+  background-color: green;
+  left: 50vw;
+  animation: first 0.5s ease-in-out 0.75s infinite;
+}
+
+.dot:nth-child(4) {
+  background-color: yellow;
+  left: 54vw;
+  animation: first 0.5s ease-in-out 1s infinite;
+}
+
+@keyframes first {
+  from {
+  }
+  to {
+    top: 31vh;
+  }
+}
